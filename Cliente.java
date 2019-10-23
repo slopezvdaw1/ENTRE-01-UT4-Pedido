@@ -52,8 +52,10 @@ public class Cliente
      * representación textual del cliente
      */
     public String toString() {
-         
-          
+         String cadenaFormateada = String.format("%10s: %-10s\n%10s: %-10s\n%10s: %-10s\n%10s: %-10s\n",
+                "NOMBRE", nombre, "DIRECCION", direccion, "CIUDAD", ciudad,
+                "PROVINCIA", provincia);
+         return cadenaFormateada;
     }
     
     /**
