@@ -33,8 +33,9 @@ public class Producto
     /**
      * obtiene un nuevo producto copia idéntica del actual
      */
-    public         obtenerCopia() {
-         
+    public Producto obtenerCopia() {
+         Producto producto = new Producto(nombre, precio);
+         return Producto;
     }
 
     /**
