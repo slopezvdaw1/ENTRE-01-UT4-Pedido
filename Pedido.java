@@ -72,7 +72,7 @@ public class Pedido
             "\nDATOS DEL CLIENTE\n" + cliente.toString() +
             "\n**** Artículos en el pedido ****\n\n" + linea1.toString() +
             linea2.toString() + "\n**** A pagar ****\n\n" +
-            String.format("%20s: %8.2d€\n%20s: %8.2d€\n%20s: %8.2d€\n", 
+            String.format("%20s: %8.2d€\n %20s: %8.2d€\n %20s: %8.2d€\n", //falla aquí pero no sé por qué
                 "IMPORTE SIN IVA", getImporteAntesIva(), "IVA", getIva(),
                 "IMPORTE TOTAL", getImporteTotal());
         return cadenaFormateada;
@@ -90,7 +90,8 @@ public class Pedido
      * devuelve una referencia al pedido actual
      */
     public Pedido getPedidoActual() {
-        return;
+        Pedido pedido = new Pedido(fecha, cliente, linea1, linea2);
+        return pedido;
     }
 
 }
