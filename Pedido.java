@@ -42,22 +42,27 @@ public class Pedido
     /**
      * calcular y devolver el importe total del pedido sin Iva
      */
-    public   getImporteAntesIva() {
-         
+    public double getImporteAntesIva() {
+        //el importe es el nº de productos * precio unitario de cada
+        double importe = linea1.getProducto().getPrecio() * linea1.getCantidad() 
+                         + linea2.getProducto().getPrecio() * linea2.getCantidad();
+        return importe;
     }
 
     /**
      * calcular y devolver el iva a aplicar
      */
-    public   getIva() {
-         
+    public double getIva() {
+         double iva = getImporteAntesIva() * IVA;
+         return iva;
     }
 
     /**
      * calcular y devolver el importe total del pedido con Iva
      */
-    public   getImporteTotal() {
-         
+    public double getImporteTotal() {
+         double importeTotal = getImporteAntesIva() + getIva();
+         return importeTotal;
     }
 
     /**
