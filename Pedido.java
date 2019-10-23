@@ -17,22 +17,25 @@ public class Pedido
     /**
      * Constructor  
      */
-    public Pedido()    {
-         
+    public Pedido(Fecha fecha, Cliente cliente, LineaPedido linea1, LineaPedido linea2)    {
+         this.fecha = fecha;
+         this.cliente = cliente;
+         this.linea1 = linea1;
+         this.linea2 = linea2;
     }
 
     /**
      * accesor para la fecha del pedido
      */
-    public   getFecha() {
-         
+    public Fecha getFecha() {
+         return fecha;
     }
 
     /**
      * accesor para el cliente
      */
-    public   getCliente() {
-         
+    public Cliente getCliente() {
+         return cliente;
     }
     
     
