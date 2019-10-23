@@ -42,7 +42,8 @@ public class Producto
      * (ver enunciado)
      */
     public String toString() {
-        
+        String cadenaFormateada = String.format("%30s |%8.2f€ unidad", nombre, precio);
+        return cadenaFormateada;
     }
 
 }
