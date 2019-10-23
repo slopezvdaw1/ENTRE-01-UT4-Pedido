@@ -4,6 +4,7 @@
  * Modela un pedido realizado por un cliente en una determinada fecha
  * El pedido incluye dos líneas de pedido que describen a cada uno de los dos
  * productos comprados en el pedido
+ * @author Sara López Vicente
  */
 public class Pedido
 {

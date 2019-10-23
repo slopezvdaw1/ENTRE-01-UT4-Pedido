@@ -2,6 +2,7 @@
 
 /**
  *  Representa a un cliente que hace un pedido 
+ *  @author Sara López Vicente
  */
 public class Cliente
 {

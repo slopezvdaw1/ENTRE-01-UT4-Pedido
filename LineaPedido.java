@@ -3,7 +3,7 @@
  *  Describe una línea de un pedido
  *  En una línea de pedido se incluye un producto
  *  y el nº de unidades compradas de ese producto
- *   
+ *   @author Sara López Vicente
  */
 public class LineaPedido
 {

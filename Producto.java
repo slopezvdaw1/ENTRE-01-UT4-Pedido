@@ -1,6 +1,7 @@
 /**
  *  
  * Modela un producto. Todo producto tiene un nombre y un  precio unidad 
+ * @author Sara López Vicente
  */
 public class Producto
 {

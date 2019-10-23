@@ -1,7 +1,7 @@
 
 /**
  *  Clase para probar el resto de clases
- *  
+ *  @author Sara López Vicente
  */
 public class TestPedido
 {
