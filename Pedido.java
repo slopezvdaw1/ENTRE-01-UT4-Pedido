@@ -68,11 +68,11 @@ public class Pedido
      * (ver enunciado)
      */
     public String toString() {
-        String cadenaFormateada = "FECHA PEDIDO: " + fecha.toString() +
+        String cadenaFormateada = "\nFECHA PEDIDO: " + fecha.toString() +
             "\nDATOS DEL CLIENTE\n" + cliente.toString() +
             "\n**** Artículos en el pedido ****\n\n" + linea1.toString() +
-            linea2.toString() + "\n**** A pagar ****\n\n" +
-            String.format("%20s: %8.2d€\n %20s: %8.2d€\n %20s: %8.2d€\n", //falla aquí pero no sé por qué
+            linea2.toString() + "\n**** A pagar ****\n\n " +
+            String.format("%20s: %8.2f€\n %20s: %8.2f€\n %20s: %8.2f€\n",
                 "IMPORTE SIN IVA", getImporteAntesIva(), "IVA", getIva(),
                 "IMPORTE TOTAL", getImporteTotal());
         return cadenaFormateada;
