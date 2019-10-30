@@ -41,6 +41,6 @@ public class TestPedido
             masAntiguo = 2;
             masNuevo = 1;
         }
-        System.out.printf("\nEl pedido %1d se ha realizado antes que el pedido %1d", masAntiguo, masNuevo);
+        System.out.printf("\nEl pedido %d se ha realizado antes que el pedido %d", masAntiguo, masNuevo);
     }
 }
