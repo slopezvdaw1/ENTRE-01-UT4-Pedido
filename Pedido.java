@@ -90,8 +90,8 @@ public class Pedido
      * devuelve una referencia al pedido actual
      */
     public Pedido getPedidoActual() {
-        Pedido pedido = new Pedido(fecha, cliente, linea1, linea2);
-        return pedido;
+        
+        return this.pedido;
     }
 
 }
